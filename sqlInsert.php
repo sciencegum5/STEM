@@ -10,7 +10,7 @@
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error); //turn off connection on our end
     }
-    $sql = "INSERT INTO students (name, age, gradeLevel) VALUES ("Bartholomew", 16, 10)";
+    $sql = "INSERT INTO students (name, age, gradeLevel) VALUES ('Bartholomew', 16, 10)";
     //$sql = "INSERT INTO led (toggleOne)
     //VALUES (1)";
     if ($conn->query($sql) === TRUE) { //pass sql query into object
@@ -21,3 +21,4 @@
 
     $conn->close();
 ?>
+

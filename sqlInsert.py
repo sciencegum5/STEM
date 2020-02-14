@@ -10,7 +10,7 @@ cursor = db.cursor()
 cur = db.cursor()
 
 # Select everything
-sql = INSERT INTO students (name, age, gradeLevel) VALUES ("Bartholomew", 16, 10)
+sql = "INSERT INTO students (name, age, gradeLevel) VALUES ('Bartholomew', 16, 10)"
 
 # Execute sql statement
 cur.execute(sql)

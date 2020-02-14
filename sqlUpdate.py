@@ -10,7 +10,7 @@ cursor = db.cursor()
 cur = db.cursor()
 
 # Select everything
-sql = UPDATE students SET age=15, gradeLevel=10 WHERE name='Bartholomew'
+sql = "UPDATE students SET age=15, gradeLevel=10 WHERE name='Bartholomew'"
 
 # Execute sql statement
 cur.execute(sql)

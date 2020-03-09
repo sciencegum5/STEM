@@ -12,6 +12,8 @@ prevHum = 0
 prevTemp = 0
 print(".........Loading")
 # Loop
+print("###Please note: If the code appears to stall at this point please check your sensor,")
+print("if there is no output from your sensor the adafruit library wil keep retrying to read from it causing the stall")
 while True:
 	sensor = Adafruit_DHT.DHT11
 	pin = 18
